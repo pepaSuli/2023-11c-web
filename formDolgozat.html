@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Űrlap dolgozat</title>
+	<style>
+		form{
+			width:500px;
+		}
+		input
+		{
+			margin-bottom: 10px;;
+		}
+		input[type="text"],
+		input[type="password"],
+		input[type="email"]
+		{
+			display:block;
+			width:450px;
+		}
+
+		input[type="text"]
+		{
+			font-size: 16px;
+			color:green;
+			background-color: greenyellow;
+			border: 1px solid green;
+		}
+		input[type="date"]
+		{
+			display:inline-block;
+		}
+		input[type="checkbox"]
+		{
+			display:inline-block;
+			margin-left: 35px;
+		}
+		input[type="submit"],
+		input[type="reset"]
+		{
+			font-size: 20px;
+			padding:15px;
+			color:green;
+			background-color: greenyellow;
+			border: 1px solid green;
+			border-radius: 15px;
+		}
+		.kozep
+		{
+			text-align: center;
+		}
+		legend
+		{
+			font-weight: bold;
+			color: green;
+			background-color: lightgreen;
+			border: 1px solid green;
+			padding:5px;
+			box-shadow: 3px 3px 3px gray;
+		}
+		fieldset
+		{
+			background-color: lightgreen;
+			margin:10px;
+			box-shadow: 3px 3px 3px gray;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Belépési adatok</legend>
+			<label for="nev">Belépési név </label>
+			<input type="text" name="nev" id="nev" placeholder="Próba Jóska">
+			<label for="email">E-mail </label>
+			<input type="email" name="email" id="email" placeholder="nincs@om.hu">
+			<label for="pw">Jelszó </label>
+			<input type="password" name="jelszo" id="pw" placeholder="123456">
+		</fieldset>
+		<fieldset>
+			<legend>Személyes adatok</legend>
+			<label for="szuldat">Születési dátum </label>
+			<input type="date" name="szuldat" id="szuldat" placeholder=""><br>
+			<label for="email">Nem</label><br>
+			<input type="radio" name="nem" id="ferfi"><label for="ferfi">Férfi</label>
+			<input type="radio" name="nem" id="no"><label for="no">Nő</label>
+			<input type="radio" name="nem" id="masnem"><label for="masnem">Egyéb</label>
+			<br>
+			<label for="szulhely">Születési hely</label>
+			<select id="szulhely" name="szulhely">
+				<option>Nagyatád</option>
+				<option>Nagykanizsa</option>
+				<option>Kaposvár</option>
+				<option>Pécs</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Egyéb</legend>
+			<label>Allergia</label><br>
+			<input type="checkbox" name="allergia1" id="allergia1">
+			<label for="allergia1">Mogyoró</label>
+			<input type="checkbox" name="allergia2" id="allergia2">
+			<label for="allergia2">Tejcukor</label>
+			<input type="checkbox" name="allergia3" id="allergia3">
+			<label for="allergia3">Glutén</label>
+			<input type="checkbox" name="allergia4" id="allergia4">
+			<label for="allergia4">Bullshit</label>
+			<input type="checkbox" name="allergia5" id="allergia5">
+			<label for="allergia5">Ezüst</label>
+		</fieldset>
+		<fieldset class="kozep">
+			<legend>Gombok</legend>
+			<input type="reset" value="Törlés">
+			<input type="submit" value="Mentés">
+		</fieldset>
+		
+	</form>
+</body>
+</html>

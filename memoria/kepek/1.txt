@@ -1,0 +1,30 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 8E9E-1008
+
+ Directory of C:\Users\Papp P‚ter\OneDrive\2023-24\11cWeb\memoria\kepek
+
+2024. 01. 24.  12:09    <DIR>          .
+2024. 01. 18.  08:37    <DIR>          ..
+2024. 01. 24.  12:09                 0 1.txt
+2017. 01. 16.  11:54           340ÿ690 aintNobdyGotTimeForThat.png
+2017. 01. 16.  11:47           458ÿ479 aliens.png
+2017. 01. 16.  11:56           226ÿ232 andItsGone.png
+2017. 01. 16.  11:56           520ÿ186 awkwardMomentSealion.png
+2017. 01. 16.  11:53           208ÿ985 backInMyDays.png
+2017. 01. 16.  11:48           492ÿ518 badLuckBrian.png
+2017. 01. 16.  11:50           495ÿ184 confessionBear.png
+2017. 01. 16.  11:54           275ÿ961 dawg.png
+2017. 01. 16.  11:50           519ÿ454 doge.png
+2017. 01. 16.  11:51           457ÿ567 drEvil.png
+2017. 01. 16.  11:48           295ÿ423 facePalmPickard.png
+2017. 01. 16.  11:47           221ÿ225 notSure.png
+2017. 01. 16.  11:46           491ÿ010 oneDoesNotSimply.png
+2017. 01. 16.  11:51           234ÿ417 philosoraptor.png
+2017. 01. 16.  11:53           263ÿ012 sayThatAgain.png
+2017. 01. 16.  11:55           794ÿ847 soHot.png
+2017. 01. 16.  11:52           428ÿ122 stonerStanley.png
+2017. 01. 16.  11:56           216ÿ355 tooDamnHigh.png
+2017. 01. 16.  11:49           175ÿ563 yallGotAny.png
+2017. 01. 16.  11:50           107ÿ825 yUNo.png
+              21 File(s)      7ÿ223ÿ055 bytes
+               2 Dir(s)  310ÿ849ÿ802ÿ240 bytes free

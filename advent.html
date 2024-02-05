@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Advent</title>
+	<link rel="stylesheet" href="advent.css">
+</head>
+<body onload="init()">
+	<script>
+		function init()
+		{
+			console.log("start");
+			for(let i=0;i<24;i++)
+			{
+				gombDisz();
+			}
+		}
+
+		function gombDisz()
+		{
+			let maxH=700-100*1.5;
+			let maxW=465;
+
+			let magassag=rand(0,maxH);
+
+			let arany=maxW/maxH*magassag;
+
+
+			let elem=document.createElement("img");
+			elem.src="gomb.png";
+			let gombW=rand(30,100);
+			elem.style.width=gombW+"px";
+			elem.style.position="absolute";
+
+
+			let szelesseg=(maxW+rand(-1*arany,arany))/2-gombW/2;
+			elem.style.left=szelesseg+"px";
+			elem.style.top=magassag+"px";
+
+			document.getElementById("fenyo").appendChild(elem);
+			//console.log(document.getElementById("fenyo"));
+		}
+
+		function rand(min,max)
+		{
+			return Math.floor(Math.random() * (max-min+1)) + min;
+		}
+	</script>
+	<div id="fenyo"></div>
+</body>
+</html>

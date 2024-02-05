@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dinamikus űrlapszerűség</title>
+</head>
+<body>
+	<h1>Dinamikus lista</h1>
+	<button onclick="ujElem()">Új elem</button>
+	<div id="container"></div>
+
+	<script>
+		function ujElem()
+		{
+			let tarolo=document.getElementById("container");
+
+			uj=document.createElement("div");
+			uj.innerHTML="valami";
+			//uj.onclick=function(){uj.style.border="1px solid red"};
+			//uj.onclick=function(){this.style.border="1px solid red"};
+			uj.onclick=function(){kivalaszt(this)};
+
+			uj.ondblclick=function(){this.remove();};
+
+			tarolo.appendChild(uj);
+
+		}
+
+		function kivalaszt(elem)
+		{
+			if(elem.style.border!=="")
+			{
+				elem.style.border="";
+			}
+			else
+			{
+				elem.style.border="1px solid red";
+			}
+		}
+	</script>
+</body>
+</html>

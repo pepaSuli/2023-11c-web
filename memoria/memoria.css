@@ -1,0 +1,17 @@
+#asztal img{
+	border: 1px solid red;
+	height: 200px;
+	/*width: 200px;*/
+}
+
+#asztal .kartya
+{
+	border: 1px solid red;
+	height: 200px;
+	width: 200px;
+	background-position: center; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin:10px;
+}

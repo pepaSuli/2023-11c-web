@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<!--
+5 bekezdés, szöveggel (lorem ipsum)
+első 2 bekezdésben 2 szintű felsorolások is!
+másik 3-ban min. 3 kép
+végén 5*5-ös tábla, szavakkal
+-->
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laboriosam mollitia iusto officiis dolore? Accusamus laudantium obcaecati ullam explicabo culpa inventore at recusandae eius, consequatur sit similique aut rem! Repellendus.
+		<ul>
+			<li>
+				qwe
+				<ul>
+					<li>QWE1</li>
+					<li>QWE2</li>
+					<li>QWE3</li>
+				</ul>
+			</li>
+			<li>
+				asd
+				<ul>
+					<li>ASD1</li>
+					<li>ASD2</li>
+					<li>ASD3</li>
+				</ul>
+			</li>
+			<li>
+				yxc
+				<ul>
+					<li>YXC1</li>
+					<li>YXC2</li>
+					<li>YXC3</li>
+				</ul>
+			</li>
+		</ul>
+	</p>
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam iste nostrum numquam velit laudantium eum quisquam provident quidem? Perspiciatis laboriosam aliquam esse in omnis reiciendis corrupti deserunt temporibus laborum saepe?
+		<ul>
+			<li>
+				qwertz
+				<ul>
+					<li>QWE1</li>
+					<li>QWE2</li>
+					<li>QWE3</li>
+				</ul>
+			</li>
+			<li>
+				asdfgh
+				<ul>
+					<li>ASD1</li>
+					<li>ASD2</li>
+					<li>ASD3</li>
+				</ul>
+			</li>
+			<li>
+				yxcvbn
+				<ul>
+					<li>YXC1</li>
+					<li>YXC2</li>
+					<li>YXC3</li>
+				</ul>
+			</li>
+		</ul>	
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto ratione voluptas tempora placeat, exercitationem qui corrupti sed officiis cum debitis culpa voluptate eveniet saepe cumque incidunt. Numquam, explicabo unde.
+		<img src="fenyo.jpg" width="100">
+		<img src="35054221.jpg" width="100">
+		<img src="gomb.png" width="100">
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequuntur officiis vitae dolore nam! Pariatur reiciendis omnis magni dicta aliquam? Expedita ut similique obcaecati eum recusandae aliquam exercitationem voluptatum ullam.
+		<img src="fenyo.jpg" width="100">
+		<img src="35054221.jpg" width="100">
+		<img src="gomb.png" width="100">
+	</p>
+	<p>
+		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem praesentium non corporis repellat voluptates earum est blanditiis? Eligendi, tempora quo cumque reiciendis nobis ex illo praesentium ab, temporibus veniam dolores!
+		<img src="fenyo.jpg" width="100">
+		<img src="35054221.jpg" width="100">
+		<img src="gomb.png" width="100">
+	</p>
+
+	<table>
+		<tr>
+			<td>egy-egy</td>
+			<td>egy-kettő</td>
+			<td>egy-három</td>
+			<td>egy-négy</td>
+			<td>egy-öt</td>
+		</tr>
+		<tr>
+			<td>kettő-egy</td>
+			<td>kettő-kettő</td>
+			<td>kettő-három</td>
+			<td>kettő-négy</td>
+			<td>kettő-öt</td>
+		</tr>
+		<tr>
+			<td>három-egy</td>
+			<td>három-kettő</td>
+			<td>három-három</td>
+			<td>három-négy</td>
+			<td>három-öt</td>
+		</tr>
+		<tr>
+			<td>négy-egy</td>
+			<td>négy-kettő</td>
+			<td>négy-három</td>
+			<td>négy-négy</td>
+			<td>négy-öt</td>
+		</tr>
+		<tr>
+			<td>öt-egy</td>
+			<td>öt-kettő</td>
+			<td>öt-három</td>
+			<td>öt-négy</td>
+			<td>öt-öt</td>
+		</tr>
+	</table>
+
+	<script>
+		document.getElementsByTagName("body")[0].children[0].style.backgroundColor="lightblue";
+
+		let masodik=document.querySelector("ul");
+		console.log(masodik.children[1].children[0].children);
+
+		for( let i=0;i<masodik.children[1].children[0].children.length;i++)
+		{
+			masodik.children[1].children[0].children[i].style.color="red";
+		}
+
+</script>
+</body>
+</html>

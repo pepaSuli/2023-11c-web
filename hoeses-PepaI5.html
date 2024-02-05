@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hóesés</title>
+	<style>
+		.hopehely
+		{
+			width: 100px;
+			position: absolute;
+			left: 100px;
+			top: 150px;
+		}
+	</style>
+</head>
+<body onload="mozgat();">
+	<script>
+		function mozgat()
+		{
+			kepek=document.getElementsByClassName("hopehely");
+			//console.log(kepek);
+			for(let i=0;i<kepek.length;i++)
+			{
+				if(kepek[i].style.top==="")
+				{
+					kepek[i].style.top="0px";
+					//kepek[i].style.left=Math.floor(Math.random() * 1000)+"px";
+					//kepek[i].dataset.speed=10;
+				}
+
+				//console.log(kepek[i].dataset.speed);
+				let y=parseInt(kepek[i].style.top.replace("px",""));
+				y+=10
+
+				if(y>body.offsetHeight)
+				{
+					y=-100;
+				}
+				kepek[i].style.top=y+"px";
+			}
+
+			setTimeout(mozgat,10);
+		}
+	</script>
+
+	<img src="./snowflake.png" id="hopehely" class="hopehely">
+	<img src="./snowflake.png" id="hopehely2" class="hopehely">
+</body>
+</html>
